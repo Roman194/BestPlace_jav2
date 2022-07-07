@@ -30,12 +30,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        MapKitFactory.setApiKey("ad3baf25-3c25-434c-a9b9-adc1f6be7441");
+        MapKitFactory.initialize(this);
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        MapKitFactory.setApiKey("ad3baf25-3c25-434c-a9b9-adc1f6be7441");
-        MapKitFactory.initialize(this);
+
 
         BottomNavigationView navView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each

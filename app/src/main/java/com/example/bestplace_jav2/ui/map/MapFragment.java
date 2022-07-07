@@ -38,11 +38,11 @@ public class MapFragment extends Fragment {
 
         mapview = (MapView) root.findViewById(R.id.mapview);
         mapview.getMap().move(
-                new CameraPosition(new Point(55.751574, 37.573856), 11.0f, 0.0f, 0.0f),
+                new CameraPosition(new Point(54.992000, 73.383600), 14.0f, 0.0f, 0.0f),
                 new Animation(Animation.Type.SMOOTH, 0),
                 null);
 
-        mapview.getMap().getMapObjects().addPlacemark(new Point(55.751574, 37.573856), ImageProvider.fromResource(getActivity(), R.drawable.green_mark));
+        mapview.getMap().getMapObjects().addPlacemark(new Point(54.992000, 73.368600), ImageProvider.fromResource(getActivity(), R.drawable.green_mark));
         return root;
 
     }
