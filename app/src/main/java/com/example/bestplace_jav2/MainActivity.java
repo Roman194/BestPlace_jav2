@@ -1,6 +1,9 @@
 package com.example.bestplace_jav2;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -20,7 +23,7 @@ import com.yandex.mapkit.mapview.MapView;
 import com.yandex.runtime.image.ImageProvider;
 import com.yandex.runtime.ui_view.ViewProvider;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     private ActivityMainBinding binding;
     private MapView mapview;
@@ -48,26 +51,13 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(binding.navView, navController);
 
 
-        //mapview = (MapView)findViewById(R.id.mapview);
-        //mapview.getMap().move(
-                //new CameraPosition(new Point(55.751574, 37.573856), 11.0f, 0.0f, 0.0f),
-                //new Animation(Animation.Type.SMOOTH, 0),
-                //null);
 
-        //mapview.getMap().getMapObjects().addPlacemark(new Point(55.751574, 37.573856), ImageProvider.fromResource(this, R.drawable.green_mark));
+
     }
 
-    @Override
-    protected void onStart() {
-        //MapKitFactory.getInstance().onStart();
-        //mapview.onStart();
-        super.onStart();
-    }
 
     @Override
-    protected void onStop() {
-        //mapview.onStop();
-        //MapKitFactory.getInstance().onStop();
-        super.onStop();
+    public void onClick(View view) {
+
     }
 }

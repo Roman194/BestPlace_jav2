@@ -9,11 +9,9 @@
 
     <com.yandex.mapkit.mapview.MapView
         android:id="@+id/mapview"
-        android:layout_width="1440px"
-        android:layout_height="3040px"
-        android:layout_marginStart="1dp"
+        android:layout_width="365dp"
+        android:layout_height="876dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></com.yandex.mapkit.mapview.MapView>
+        app:layout_constraintStart_toStartOf="parent"></com.yandex.mapkit.mapview.MapView>
 </androidx.constraintlayout.widget.ConstraintLayout>
 

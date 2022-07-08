@@ -6,4 +6,5 @@
     <string name="title_profile">Profile</string>
     <string name="title_map">map</string>
     <string name="title_best_places">Best places</string>
+    <string name="password">Пароль</string>
 </resources>

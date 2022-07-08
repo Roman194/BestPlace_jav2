@@ -4,7 +4,9 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -12,12 +14,14 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.bestplace_jav2.R;
 import com.example.bestplace_jav2.databinding.FragmentBestPlacesBinding;
 
-public class BestPlacesFragment extends Fragment {
+public class BestPlacesFragment extends Fragment{
 
     private BestPlacesViewModel notificationsViewModel;
     private FragmentBestPlacesBinding binding;
+
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -31,7 +35,7 @@ public class BestPlacesFragment extends Fragment {
         notificationsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
-                textView.setText(s);
+                textView.setText("Soon you can see best places in the city there!");
             }
         });
         return root;
@@ -42,5 +46,6 @@ public class BestPlacesFragment extends Fragment {
         super.onDestroyView();
         binding = null;
     }
+
 
 }
