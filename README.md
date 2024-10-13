@@ -1,6 +1,7 @@
 # BestPlace
 its an android porject for searching best free places to hang out with friends or walking by yourself with coffee</br>
 It was made for two weeks during "CityHeroes22" summer hackhaton</br>
+More info in other repository: https://github.com/EYadroshnikov/Best-Place</br>
 ## Used features:
 - Yandex mapkit</br>
 - Java</br>
